@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="landing.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="cover"></div>
+
+        <div class="content">
+            <div class="title reveal">✨ Simple. Beautiful. Effective.</div>
+
+            <h1 class="heading reveal">Master Your Tasks,</h1>
+            <h1 class="heading blue reveal">Boost Your Productivity</h1>
+
+            <p class="subheading reveal">
+                A beautifully designed task management app that helps you organize,
+                prioritize, and accomplish your goals with ease.
+            </p>
+
+            <div class="buttons reveal">
+                <button onclick="location.href='dashboard.html'">
+                    Get Started Free →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat reveal">
+            <h2>100%</h2>
+            <p>Free Forever</p>
+        </div>
+
+        <div class="stat reveal">
+            <h2>0</h2>
+            <p>Setup Required</p>
+        </div>
+
+        <div class="stat reveal">
+            <h2>∞</h2>
+            <p>Tasks Allowed</p>
+        </div>
+
+        <div class="stat reveal">
+            <h2>24/7</h2>
+            <p>Available</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="sectionTitle reveal">Everything You Need</h2>
+        <p class="sectionSub reveal">
+            Powerful features designed to help you stay organized and achieve<br> more every day.
+        </p>
+
+        <div class="grid">
+            <div class="card reveal">
+                <img src="images/L1.png" width="60px">
+                <h3>Task Organization</h3>
+                <p>Create, organize, and prioritize tasks with an intuitive interface.</p>
+            </div>
+
+            <div class="card reveal">
+                <img src="images/L2.png" width="60px">
+                <h3>Visual Analytics</h3>
+                <p>Track your progress with beautiful charts and helpful insights.</p>
+            </div>
+
+            <div class="card reveal">
+                <img src="images/L3.png" width="60px">
+                <h3>Due Date Tracking</h3>
+                <p>Never miss deadlines with smart reminders and scheduling.</p>
+            </div>
+
+            <div class="card reveal">
+                <img src="images/L4.png" width="60px">
+                <h3>Lightning Fast</h3>
+                <p>Smooth animations and instant responses make everything effortless.</p>
+            </div>
+
+            <div class="card reveal">
+                <img src="images/L5.png" width="60px">
+                <h3>Local Storage</h3>
+                <p>Your data stays on your device. No account needed, full privacy.</p>
+            </div>
+
+            <div class="card reveal">
+                <img src="images/L6.png" width="50px">
+                <h3>Priority System</h3>
+                <p>Focus on what truly matters with a clean priority workflow.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="title grey reveal">Start Your Productive Journey</div>
+        <h2 class="reveal">Ready to Get Things Done?</h2>
+        <p class="reveal">
+            Join thousands of productive people who use TaskFlow to manage their daily <br>tasks and achieve their goals
+        </p>
+        <button class="reveal">Start Managing Tasks</button>
+    </section>
+
+    <footer class="footer">
+        <p>Task Manager • For better productivity</p>
+    <p>By Rida Ayaz</p>
+    </footer>
+
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll(".reveal").forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>
